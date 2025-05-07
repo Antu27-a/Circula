@@ -1,0 +1,12 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(110, 0,215);
+}
+
+.resaltar{
+    color: rgb(110, 0, 215);
+    font-weight: 600;
+    font-size: 150%;
+}
