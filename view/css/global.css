@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+
+/* aca se estila lo que seria el estilo general de la pagina, 
+y lo que se va a quedar igual entre pagina y pagina (navbar, footer, colores, etc) */
+
+
 @font-face {
     font-family: 'code';
     src: url('../font/SourceCodePro-VariableFont_wght.ttf') format('truetype');
@@ -76,6 +81,7 @@ header {
     font-weight: 1000;
     border: 1px solid rgb(110, 0, 215);
     border-radius: 6px;
+    transition: .3s;
 }
 
 .btn-registrarse:hover {

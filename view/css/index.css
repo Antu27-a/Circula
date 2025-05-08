@@ -10,3 +10,22 @@ main{
     font-weight: 600;
     font-size: 150%;
 }
+
+.btn-presentacion {
+    display: flex;
+    cursor: pointer;
+    padding: 6px;
+    background-color: rgb(110, 0, 215);
+    color: whitesmoke;
+    font-weight: bold;
+    border: 1px solid rebeccapurple;
+    border-radius: 4px;
+    transition: .3s;
+}
+
+.btn-presentacion:hover {
+    background-color: rebeccapurple;
+    color: white;
+    border: 1px solid rgb(110, 0, 215);
+    
+}
