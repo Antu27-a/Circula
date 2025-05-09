@@ -16,10 +16,11 @@
     <header>
         <img src="view/img/global-img/logo.png" alt="" class="logo">
         <nav class="menu">
-            <a href="index.html">Inicio</a>
-            <a href="explorar.html">Explorar</a>
+            <a href="index.html"> <img class="icon" src="view/img/global-img/home-icon-silhouette.png" alt="">
+                Inicio</a>
+            <a href="explorar.html"><img class="icon" src="view/img/global-img/magnifying-glass.png" alt="">Explorar</a>
             <a href="donar.html">Inventario</a>
-            <a href="contacto.html">Contacto</a>
+            <a href="contacto.html"> <img class="icon" src="view/img/global-img/chatting.png" alt=""> Contacto</a>
         </nav>
         <div class="login">
             <a href="login.html" class="btn-login">Iniciar Sesión</a>
@@ -27,11 +28,198 @@
         </div>
     </header>
     <main>
+
         <div class="presentacion">
-            <h1>Juntos hacemos <span class="resaltar">circular </span>los <span class="resaltar">objetos </span>,</h1>
-            <h1>no el desperdicio.</h1>
+            <h1><span class="resaltar">Juntos</span> hacemos <span class="resaltar">circular </span>los <span
+                    class="resaltar">objetos </span>no el desperdicio,</h1>
+            <h3>Una plataforma donde puedes dar nueva vida a tus objetos y encontrar lo que necesitas sin gastar dinero.
+            </h3>
             <input type="button" value="Explorar" class="btn-presentacion">
         </div>
+
+        <div class="info">
+            <h2 class="titulo">¿Por qué usar Circula?</h2>
+            <div class="features">
+                <div class="card">
+                    <div class="iconn"><img src="view/img/global-img/actualizar.png" alt=""></div>
+                    <h3>Sin dinero</h3>
+                    <p>Intercambia objetos sin necesidad de usar dinero.</p>
+                </div>
+                <div class="card">
+                    <div class="iconn"><img src="view/img/global-img/seguridad-activada.png" alt=""></div>
+                    <h3>Seguro</h3>
+                    <p>Sistema de reputación y consejos para intercambios seguros.</p>
+                </div>
+                <div class="card">
+                    <div class="iconn"><img src="view/img/global-img/regalo.png" alt=""></div>
+                    <h3>Solidario</h3>
+                    <p>Dona objetos que ya no usas a quien los necesita.</p>
+                </div>
+                <div class="card">
+                    <div class="iconn"><img src="view/img/global-img/ubicacion.png" alt=""></div>
+                    <h3>Local</h3>
+                    <p>Conecta con personas de tu zona para facilitar los intercambios.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="empezar">
+            <h1 class="titulo">¿Cómo empezar?</h1>
+            <div class="pasos">
+                <div class="paso">
+                    <div class="numero">1</div>
+                    <h3>Regístrate</h3>
+                    <p>Crea tu cuenta gratis en menos de un minuto.</p>
+                    <a href="#" class="boton">Crear cuenta</a>
+                </div>
+                <div class="paso">
+                    <div class="numero">2</div>
+                    <h3>Publica tus objetos</h3>
+                    <p>Sube fotos y describe los objetos que quieres intercambiar o donar.</p>
+                    <a href="#" class="boton">Registrarse para publicar</a>
+                </div>
+                <div class="paso">
+                    <div class="numero">3</div>
+                    <h3>Explora y contacta</h3>
+                    <p>Busca objetos que te interesen y contacta con sus dueños.</p>
+                    <a href="#" class="boton">Explorar objetos</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Sección principal de objetos -->
+        <section class="seccion-objetos">
+            <h2 class="titulo">Objetos disponibles</h2>
+            <div class="contenedor-tarjetas">
+                <div class="tarjeta">
+                    <img src="view/img/Linea Palo Santo - Sagrada Madre.jpg" alt="">
+                    <span class="etiqueta gratis">Gratis</span>
+                    <button class="btn-favorito" title="Agregar a favoritos">♡</button>
+                    <div class="contenido">
+                        <h3>Nombre del objeto 1</h3>
+                        <p class="ubicacion">📍 Ciudad, Barrio</p>
+                        <div class="descripcion-corta">
+                            Descripción breve del objeto, características principales y estado de...
+                        </div>
+                        <div class="descripcion-completa">
+                            Descripción breve del objeto, características principales y estado del objeto. Aquí se
+                            muestra más información útil y detallada para el usuario.
+                        </div>
+                        <div class="estrellas">☆ (12)</div>
+                        <button class="btn-detalles">Ver detalles</button>
+                    </div>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="view/img/gato.jpg" alt="">
+                    <span class="etiqueta gratis">Gratis</span>
+                    <button class="btn-favorito" title="Agregar a favoritos">♡</button>
+
+                    <div class="contenido">
+                        <h3>Nombre del objeto 1</h3>
+                        <p class="ubicacion">📍 Ciudad, Barrio</p>
+                        <div class="descripcion-corta">
+                            Descripción breve del objeto, características principales y estado de...
+                        </div>
+                        <div class="descripcion-completa">
+                            Descripción breve del objeto, características principales y estado del objeto. Aquí se
+                            muestra más información útil y detallada para el usuario.
+                        </div>
+                        <div class="estrellas">☆ (12)</div>
+                        <button class="btn-detalles">Ver detalles</button>
+                    </div>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="view/img/Palo Santo con Violetas.jpg" alt="">
+                    <span class="etiqueta intercambio">Intercambio</span>
+                    <button class="btn-favorito" title="Agregar a favoritos">♡</button>
+                    <div class="contenido">
+                        <h3>Nombre del objeto 1</h3>
+                        <p class="ubicacion">📍 Ciudad, Barrio</p>
+                        <div class="descripcion-corta">
+                            Descripción breve del objeto, características principales y estado de...
+                        </div>
+                        <div class="descripcion-completa">
+                            Descripción breve del objeto, características principales y estado del objeto. Aquí se
+                            muestra más información útil y detallada para el usuario.
+                        </div>
+                        <div class="estrellas">☆ (12)</div>
+                        <button class="btn-detalles">Ver detalles</button>
+                    </div>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="view/img/gato.jpg" alt="">
+                    <span class="etiqueta donacion">Donacion</span>
+                    <button class="btn-favorito" title="Agregar a favoritos">♡</button>
+                    <div class="contenido">
+                        <h3>Nombre del objeto 1</h3>
+                        <p class="ubicacion">📍 Ciudad, Barrio</p>
+                        <div class="descripcion-corta">
+                            Descripción breve del objeto, características principales y estado de...
+                        </div>
+                        <div class="descripcion-completa">
+                            Descripción breve del objeto, características principales y estado del objeto. Aquí se
+                            muestra más información útil y detallada para el usuario.
+                        </div>
+                        <div class="estrellas">☆ (12)</div>
+                        <button class="btn-detalles">Ver detalles</button>
+                    </div>
+                </div>
+
+                <div class="tarjeta">
+
+                    <img class="imagen" src="view/img/gato.jpg" alt="">
+                    <span class="etiqueta gratis">Gratis</span>
+                    <button class="btn-favorito" title="Agregar a favoritos">♡</button>
+
+
+                    <div class="contenido">
+                        <h3>Nombre del objeto 1</h3>
+                        <p class="ubicacion">📍 Ciudad, Barrio</p>
+
+                        <div class="descripcion-corta">
+                            Mesa de comedor de madera maciza para 6 personas. En buen estado, solo tiene algunos
+                            detalles...
+                        </div>
+
+                        <div class="descripcion-completa">
+                            Mesa de comedor de madera maciza para 6 personas. En buen estado, solo tiene algunos
+                            detalles por el uso.
+
+
+                            <div class="detalles-extra">
+                                <p><strong>Valor est.: $200</strong></p>
+                                <p><strong>Condición:</strong> Usado</p>
+                                <p><strong>Publicado:</strong> Hace 1 semana</p>
+                                <p><strong>Vendedor:</strong> Martín S.
+                                    <span class="estrellas">⭐⭐⭐✰✰</span>
+                                    <span class="confiable">Confiable</span>
+                                </p>
+                            </div>
+                            <div class="bloque-sesion">
+                                <p>Iniciá sesión para contactar al dueño</p>
+                                <a href="#" class="boton">Iniciar sesión</a>
+                            </div>
+
+                        </div>
+
+                        <button class="btn-detalles">Ver detalles</button>
+                    </div>
+                </div>
+            
+        </section>
+
+        <div class="boton-centro">
+            <button class="btn-ver-mas">Ver más objetos</button>
+        </div>
+
+
+        <script src="view/js/tarjetas.js"></script>
+
     </main>
     <footer>
 
