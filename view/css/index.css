@@ -78,9 +78,9 @@ main {
     padding: 30px 20px;
     width: 260px;
     height: 290px;
-
     box-sizing: border-box;
-    transition: transform 0.2s, box-shadow 0.3s;
+    transition: .3s;
+    filter: drop-shadow(4px 4px 4px rgb(0, 0, 0, .1));
     cursor: default;
 }
 
@@ -371,7 +371,6 @@ main {
 .detalles-extra{
     margin-top: 10px;
     line-height: 29px;
-    
 }
 
 
@@ -382,7 +381,6 @@ main {
     padding: 5px 6px;
     border-radius: 10px;
     font-size: 17px;
- 
 }
 
 /* Bloque para sesión */
