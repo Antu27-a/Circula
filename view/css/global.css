@@ -7,16 +7,11 @@
 /* aca se estila lo que seria el estilo general de la pagina, 
 y lo que se va a quedar igual entre pagina y pagina (navbar, footer, colores, etc) */
 
-
-@font-face {
-    font-family: 'code';
-    src: url('../font/SourceCodePro-VariableFont_wght.ttf') format('truetype');
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
 }
-
-/* body {
-    font-family: 'code', sans-serif;
-    background-color: rgb(221, 221, 221);
-} */
 
 .icon{
     max-width: 25px;

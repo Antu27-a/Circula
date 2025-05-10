@@ -20,14 +20,10 @@ main {
     width: 100%;
     box-sizing: border-box;
     margin-bottom: 40px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* Centrado vertical */
     align-items: center;
-    /* Centrado horizontal */
-
     background: linear-gradient(90deg, #6e00d7, #620faf, #280247);
 }
 
