@@ -20,13 +20,13 @@
             <a href="contacto.html"> <img class="icon" src="view/img/global-img/chatting.png" alt=""> Contacto</a>
         </nav>
         <div class="login">
-            <a href="login.html" class="btn-login">Iniciar Sesión</a>
-            <a href="registrar.html" class="btn-registrarse">Registrarse</a>
+            <a href="login.php" class="btn-login">Iniciar Sesión</a>
+            <a href="registrar.php" class="btn-registrarse">Registrarse</a>
         </div>
     </header>
     <main>
 
-        <form action="" class="formulario">
+        <form action="" class="formulario" method="post">
 
             <h2>Iniciar Sesion</h2>
 
@@ -36,12 +36,17 @@
 
             <input type="submit" name="ingresar" value="Iniciar Sesion">
 
+            
         </form>
 
     </main>
     <footer>
 
     </footer>
+    <?php 
+    include("../../controller/conexionBD.php");
+    include("../../model/login.php");
+    ?>
 </body>
 
 </html>

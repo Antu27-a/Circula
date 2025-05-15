@@ -19,13 +19,13 @@
             <a href="contacto.html"><span class="nav-a"><img class="icon" src="../img/icon-menu/charlando.png" alt=""> Contacto</span></a>
         </nav>
         <div class="login">
-            <a href="login.html" class="btn-login">Iniciar Sesión</a>
-            <a href="view/pages/registrar.html" class="btn-registrarse">Registrarse</a>
+            <a href="login.php" class="btn-login">Iniciar Sesión</a>
+            <a href="registro.php" class="btn-registrarse">Registrarse</a>
         </div>
     </header>
     <main>
 
-        <form action="" class="formulario">
+        <form action="" class="formulario" method="post">
 
             <h2>Registrarse</h2>
 
@@ -49,6 +49,10 @@
     <footer>
 
     </footer>
+    <?php 
+    include ("../../controller/conexionBD.php");
+    include ("../../model/registro.php");
+    ?>
 </body>
 
 </html>
