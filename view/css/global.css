@@ -92,3 +92,9 @@ header {
     background-color: rgb(110, 0, 215);
     color: white;
 }
+
+.nav-a { 
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}

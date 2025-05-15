@@ -403,9 +403,3 @@ main {
 .bloque-sesion .boton:hover {
     background-color: #5b13a2;
 }
-
-.nav-a { 
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
