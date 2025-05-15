@@ -5,6 +5,11 @@ body {
     padding: 0;
 }
 
+:root { 
+    --primary-color: #6e00d7;
+    --secundary-color: #ffb230;
+    --background-color: #f5f5f5;
+}
 
 main {
     display: flex;
@@ -57,8 +62,9 @@ main {
 .btn-presentacion:hover {
     background-color: rgb(0, 0, 0);
     color: white;
-    border: 1px solid rgb(110, 0, 215);
+    border: 1px solid #6e00d7;
 }
+
 
 .features {
     display: flex;
@@ -122,15 +128,18 @@ main {
     margin-top: 30px;
     margin-bottom: 40px;
     font-size: 30px;
-    color: #6e00d7;
+    color:#6e00d7
 }
+
+
 
 /* como empezamos???? */
 .empezar {
     padding: 50px 20px;
-    background-color: #f8f9fa;
+    background-color: #f8f9fa ;
     text-align: center;
 }
+
 
 .empezar h2 {
     font-size: 24px;
@@ -160,9 +169,10 @@ main {
     transform: translateY(-5px);
 }
 
+
 .numero {
     background-color: #6e00d7;
-    color:  #fdf9e1;
+    color:  #f5f5f5;
     font-weight: bold;
     width: 35px;
     height: 35px;
