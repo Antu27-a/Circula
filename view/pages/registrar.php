@@ -7,6 +7,7 @@
     <title>Circula || Explorar</title>
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/registrar.css">
+    <link rel="stylesheet" href="../css/formulario.css">
 </head>
 
 <body>
@@ -19,25 +20,29 @@
             <a href="contacto.html"><span class="nav-a"><img class="icon" src="../img/icon-menu/charlando.png" alt=""> Contacto</span></a>
         </nav>
         <div class="login">
-            <a href="login.html" class="btn-login">Iniciar Sesión</a>
-            <a href="view/pages/registrar.html" class="btn-registrarse">Registrarse</a>
+            <a href="login.php" class="btn-login">Iniciar Sesión</a>
+            <a href="registro.php" class="btn-registrarse">Registrarse</a>
         </div>
     </header>
     <main>
 
-        <form action="" class="formulario">
+        <form action="" class="formulario" method="post">
 
             <h2>Registrarse</h2>
 
-            <input type="text" name="" placeholder="Nombre...">
+            <input type="text" name="nombre" placeholder="Nombre...">
 
-            <input type="text" name="" placeholder="Apellido...">
+            <input type="text" name="apellido" placeholder="Apellido...">
 
-            <input type="text" name="" placeholder="Correo Electronico...">
+            <input type="number" name="telefono" placeholder="Telefono...">
 
-            <input type="text" name="" placeholder="Contraseña...">
+            <input type="text" name="direccion" placeholder="Dirección...">
 
-            <input type="submit" name="" value="Registrar">
+            <input type="email" name="email" placeholder="Correo Electronico...">
+
+            <input type="password" name="password" placeholder="Contraseña...">
+
+            <input type="submit" name="ingreso" value="Registrar">
 
         </form>
 
@@ -45,6 +50,10 @@
     <footer>
 
     </footer>
+    <?php 
+    include ("../../controller/conexionBD.php");
+    include ("../../model/registro.php");
+    ?>
 </body>
 
 </html>
