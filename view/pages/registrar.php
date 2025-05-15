@@ -29,15 +29,19 @@
 
             <h2>Registrarse</h2>
 
-            <input type="text" name="" placeholder="Nombre...">
+            <input type="text" name="nombre" placeholder="Nombre...">
 
-            <input type="text" name="" placeholder="Apellido...">
+            <input type="text" name="apellido" placeholder="Apellido...">
 
-            <input type="text" name="" placeholder="Correo Electronico...">
+            <input type="number" name="telefono" placeholder="Telefono...">
 
-            <input type="text" name="" placeholder="Contraseña...">
+            <input type="text" name="direccion" placeholder="Dirección...">
 
-            <input type="submit" name="" value="Registrar">
+            <input type="email" name="email" placeholder="Correo Electronico...">
+
+            <input type="password" name="password" placeholder="Contraseña...">
+
+            <input type="submit" name="ingreso" value="Registrar">
 
         </form>
 

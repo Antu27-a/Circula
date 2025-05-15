@@ -30,12 +30,11 @@
 
             <h2>Iniciar Sesion</h2>
 
+            <input type="text" name="email" placeholder="Correo Electronico...">
 
-            <input type="text" name="" placeholder="Correo Electronico...">
+            <input type="text" name="password" placeholder="Contraseña...">
 
-            <input type="text" name="" placeholder="Contraseña...">
-
-            <input type="submit" name="" value="Iniciar Sesion">
+            <input type="submit" name="ingresar" value="Iniciar Sesion">
 
         </form>
 
