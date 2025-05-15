@@ -54,12 +54,24 @@ header {
     font-size: 20px;
     font-weight: 600;
     transition: .3s;
+    position: relative; /* Necesario para el pseudo-elemento */
 }
 
-.menu a:hover {
-    
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: #ffb230;
+    transition: width 0.3s;
 }
 
+.menu a:hover::after {
+    width: 100%;
+}
 
 .login {
     width: 24%;
