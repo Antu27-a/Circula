@@ -24,7 +24,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(90deg, #6e00d7, #620faf, #280247);
+    background: linear-gradient(90deg, #380363, #620faf, #380363);
 }
 
 .presentacion h1,
@@ -402,4 +402,10 @@ main {
 
 .bloque-sesion .boton:hover {
     background-color: #5b13a2;
+}
+
+.nav-a { 
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }
