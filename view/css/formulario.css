@@ -41,3 +41,96 @@
 .formulario input[type="submit"]:hover {
     filter: brightness(.8);
 }
+
+.contacto {
+  max-width: 1000px;
+  margin: 10px;
+  padding: 20px;
+  text-align: left;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contacto h2 {
+  font-size: 2em;
+  color: #ffb230;
+}
+
+.contacto p {
+  color: #070707;
+  margin-bottom: 20px;
+  font-weight: 600; /* más grueso que normal (400) */
+  font-size: 17px;
+}
+
+
+.contacto-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 100px; 
+  /* flex-wrap: nowrap; */
+}
+
+/* Cartas */
+.card {
+  background: #f2f2f2;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 8px 8px 10px rgba(38, 3, 43, 0.1);
+  box-sizing: border-box;
+  width: auto;
+  border: 1px solid #131213;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+}
+
+/* Formulario */
+.formularioc {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  
+  
+}
+
+.formularioc input,
+.formularioc textarea {
+  padding: 10px;
+  border: 1px solid #6e00d7;
+  border-radius: 8px;
+  font-size: 1em;
+  background-color: #fff;
+  width: 290px;
+}
+
+.formularioc button {
+  padding: 12px;
+  background-color: #ffb230;
+  color: white;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.formularioc button:hover {
+  background-color: #6e00d7;
+}
+
+/* Responsivo en móviles */
+@media (max-width: 768px) {
+  .contacto-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+}

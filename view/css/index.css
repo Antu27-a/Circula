@@ -5,7 +5,7 @@ body {
     padding: 0;
 }
 
-:root { 
+:root {
     --primary-color: #6e00d7;
     --secundary-color: #ffb230;
     --background-color: #f5f5f5;
@@ -16,8 +16,6 @@ main {
     flex-direction: column;
     /* Asegura que los hijos estén uno debajo del otro */
     align-items: center;
-
-
 }
 
 .presentacion {
@@ -38,7 +36,6 @@ main {
     margin: 0 0 20px;
     text-align: center;
 }
-
 
 .resaltar {
     color: rgb(12, 11, 12);
@@ -65,12 +62,16 @@ main {
     border: 1px solid #6e00d7;
 }
 
-
-.features {
+.features,
+.pasos,
+.contenedor-tarjetas {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+}
+
+.features {
     padding-bottom: 20px;
 }
 
@@ -79,7 +80,7 @@ main {
     border-radius: 10px;
     padding: 30px 20px;
     width: 260px;
-    height: 290px;
+    height: 295px;
     box-sizing: border-box;
     transition: .3s;
     filter: drop-shadow(4px 4px 4px rgb(0, 0, 0, .1));
@@ -101,7 +102,6 @@ main {
     height: 60px;
     margin: 0 auto 15px;
     /* centraaaa */
-
 }
 
 .iconn img {
@@ -109,49 +109,38 @@ main {
     height: 30px;
 }
 
-.card h3 {
-    margin: 10px 0 10px;
+.card h3,
+.paso h3 {
+    margin: 10px 0;
     font-size: 20px;
     font-weight: bold;
 }
 
-.card p {
+.card p,
+.paso p {
     margin: 0;
     color: #555;
     font-size: 18px;
 }
 
-
-/* aaaaaaaaaaa */
 .titulo {
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 40px;
+    margin: 30px 0 40px;
     font-size: 30px;
-    color:#6e00d7
+    color: #6e00d7;
 }
-
-
 
 /* como empezamos???? */
 .empezar {
     padding: 50px 20px;
-    background-color: #f8f9fa ;
+    background-color: #f8f9fa;
     text-align: center;
 }
-
 
 .empezar h2 {
     font-size: 24px;
     margin-bottom: 40px;
     font-weight: bold;
-}
-
-.pasos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
 }
 
 .paso {
@@ -161,7 +150,6 @@ main {
     width: 290px;
     box-shadow: 5px 9px 9px rgba(0, 0, 0, 0.05);
     text-align: left;
-   
     transition: transform 0.2s ease;
 }
 
@@ -169,10 +157,9 @@ main {
     transform: translateY(-5px);
 }
 
-
 .numero {
     background-color: #6e00d7;
-    color:  #f5f5f5;
+    color: #f5f5f5;
     font-weight: bold;
     width: 35px;
     height: 35px;
@@ -183,17 +170,6 @@ main {
     margin-bottom: 10px;
 }
 
-.paso h3 {
-    margin: 0 0 10px;
-    font-size: 20px;
-}
-
-.paso p {
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 15px;
-}
-
 .boton {
     display: inline-block;
     padding: 8px 12px;
@@ -202,7 +178,8 @@ main {
     border-radius: 5px;
     text-decoration: none;
     font-size: 14px;
-    transition:  0.3s;
+    transition: 0.3s;
+    margin-top: 15px;
 }
 
 .boton:hover {
@@ -210,12 +187,7 @@ main {
     color: white;
 }
 
-/* aaaaaaaaaaaaaaaaaaaaaaaaaaa */
-
 .contenedor-tarjetas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     gap: 23px;
     align-items: flex-start;
     margin-bottom: 40px;
@@ -294,7 +266,7 @@ main {
 
 /* Contenido de la tarjeta */
 .contenido h3 {
-    margin: 32px 0 8px 0;
+    margin: 32px 0 8px;
     color: #5a2ca0;
     font-size: 20px;
 }
@@ -315,14 +287,13 @@ main {
     overflow: hidden;
     font-size: 18px;
     color: #444;
-    transition: max-height 0.4s ;
+    transition: max-height 0.4s;
     margin-top: 10px;
-   
 }
 
 /* Mostrar descripción expandida al hacer clic */
 .tarjeta.expandida .descripcion-completa {
-    max-height: 500px; 
+    max-height: 500px;
     padding: 10px 0;
 }
 
@@ -333,21 +304,33 @@ main {
 }
 
 /* Botón de ver detalles */
-.btn-detalles {
+.btn-detalles,
+.btn-ver-mas {
     background-color: #7e22ce;
     color: white;
-    border: none;
     padding: 8px 12px;
     border-radius: 6px;
+    border: none;
     cursor: pointer;
     font-size: 14px;
     transition: background-color 0.3s ease;
 }
 
-.btn-detalles:hover {
+.btn-detalles:hover,
+.btn-ver-mas:hover {
     background-color: #5b13a2;
 }
 
+.btn-ver-mas {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.btn-ver-mas:hover {
+    color: #ac88ad;
+}
 
 /* Botón centrado */
 .boton-centro {
@@ -356,29 +339,10 @@ main {
     margin-top: 20px;
 }
 
-.btn-ver-mas {
-    background-color: #7e22ce;
-    color: white;
-    padding: 10px 10px;
-    border-radius: 6px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-bottom: 10px;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.btn-ver-mas:hover {
-    background-color: #5b13a2;
-    color: #ac88ad;
-}
-
-.detalles-extra{
+.detalles-extra {
     margin-top: 10px;
     line-height: 29px;
 }
-
 
 /* Confiabilidad */
 .confiable {
