@@ -1,45 +1,47 @@
-
-
 .formulario {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    border-radius: 6px;
-    background-color: var(--primary-color);
-    color: whitesmoke;
-    width: 30%;
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 6px;
+  background-color: var(--primary-color);
+  color: whitesmoke;
+  width: 30%;
+
 }
+
 .formulario input {
-    width: 100%;
-    margin-top: 26px;
-    font-size: 16px;
-    border-radius: 4px;
-    padding: 8px;
-    background-color: #931fff;
-    border: none;
-    color: white;
+  width: 100%;
+  margin-top: 26px;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 8px;
+  background-color: #931fff;
+  border: none;
+  color: white;
 }
+
 .formulario input::placeholder {
-    color: rgb(184, 184, 184);
-}   
-.formulario input[type="submit"] {
-    width: auto;
-    padding: 8px 16px;
-    margin-bottom: 6px;
-    background-color: var(--secundary-color);
-    color: white;
-    font-size: 20px;
-    font-weight: 600;
-    border-radius: 6px;
-    border: none;
-    cursor: pointer;
-    transition: .3s;
+  color: rgb(184, 184, 184);
 }
+
+.formulario input[type="submit"] {
+  width: auto;
+  padding: 8px 16px;
+  margin-bottom: 6px;
+  background-color: var(--secundary-color);
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: .3s;
+}
+
 .formulario input[type="submit"]:hover {
-    filter: brightness(.8);
+  filter: brightness(.8);
 }
 
 .contacto {
@@ -58,7 +60,8 @@
 .contacto p {
   color: #070707;
   margin-bottom: 20px;
-  font-weight: 600; /* más grueso que normal (400) */
+  font-weight: 600;
+  /* más grueso que normal (400) */
   font-size: 17px;
 }
 
@@ -67,7 +70,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 100px; 
+  gap: 100px;
   /* flex-wrap: nowrap; */
 }
 
@@ -94,8 +97,7 @@
   flex-direction: column;
   gap: 15px;
   padding: 20px;
-  
-  
+
 }
 
 .formularioc input,
@@ -121,6 +123,14 @@
 
 .formularioc button:hover {
   background-color: #6e00d7;
+}
+.formularioc input:hover{
+  border-color: #ffb230;
+}
+
+.titulo {
+  color: #6e00d7;
+  font-weight: 900;
 }
 
 /* Responsivo en móviles */
