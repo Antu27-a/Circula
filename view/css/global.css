@@ -54,7 +54,6 @@ header {
     font-size: 20px;
     font-weight: 600;
     transition: .3s;
-<<<<<<< Updated upstream
     position: relative; /* Necesario para el pseudo-elemento */
 }
 
@@ -68,15 +67,11 @@ header {
     height: 2px;
     background: #ffb230;
     transition: width 0.3s;
-=======
-    
->>>>>>> Stashed changes
 }
 
 .menu a:hover::after {
     width: 100%;
 }
-
 
 
 .login {
