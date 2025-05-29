@@ -71,7 +71,10 @@ header {
 
 .menu a:hover::after {
     width: 100%;
+    
 }
+
+
 
 
 .login {
