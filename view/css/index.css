@@ -83,13 +83,13 @@ main {
     height: 295px;
     box-sizing: border-box;
     transition: .3s;
-    filter: drop-shadow(4px 4px 4px rgb(0, 0, 0, .1));
+    filter: drop-shadow(4px 4px 4px rgb(0, 0, 0, .2));
     cursor: default;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 8px 18px rgba(0, 0, 0, 0.1);
 }
 
 .iconn {
@@ -133,7 +133,6 @@ main {
 /* como empezamos???? */
 .empezar {
     padding: 50px 20px;
-    background-color: #f8f9fa;
     text-align: center;
 }
 
@@ -148,13 +147,14 @@ main {
     border-radius: 10px;
     padding: 25px;
     width: 290px;
-    box-shadow: 5px 9px 9px rgba(0, 0, 0, 0.05);
+    filter: drop-shadow(4px 4px 4px rgb(0, 0, 0, .2));
     text-align: left;
-    transition: transform 0.2s ease;
+    transition: .3s;
 }
 
 .paso:hover {
     transform: translateY(-5px);
+    box-shadow: 4px 8px 18px rgba(0, 0, 0, 0.1);
 }
 
 .numero {
@@ -313,12 +313,13 @@ main {
     border: none;
     cursor: pointer;
     font-size: 14px;
-    transition: background-color 0.3s ease;
+    transition: .3s;
 }
 
 .btn-detalles:hover,
 .btn-ver-mas:hover {
     background-color: #5b13a2;
+    transform: scale(1.05);
 }
 
 .btn-ver-mas {
@@ -328,15 +329,13 @@ main {
     padding: 10px;
 }
 
-.btn-ver-mas:hover {
-    color: #ac88ad;
-}
 
 /* Botón centrado */
 .boton-centro {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    margin-bottom: 20px
 }
 
 .detalles-extra {
@@ -382,20 +381,35 @@ main {
 .Info-reputacion {
     display: grid;
     margin-bottom: 40px;
-    box-shadow: 0 4px 12px rgba(245, 229, 14, 0.863);
+    box-shadow: 6px 6px 4px rgb(0, 0, 0, .5);
     border-radius: 15px;
+    color: white;
 
 }
 
 .reput-info {
     display: flex;
-    padding: 20px;
-    background: #ac88ad;
+    padding: 10px;
+    background-color: #5b13a2;
     border-radius: 15px;
+    color: white;
 }
 
 .imagen-reputacion img {
     width: 300px;
     height: 300px;
     border-radius: 15px;
+}
+
+.tittle{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px
+}
+
+.contenidor{
+    padding: 10px;
+    margin: 10px;
 }

@@ -45,11 +45,12 @@
 }
 
 .contacto {
-  max-width: 1000px;
-  margin: 10px;
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   text-align: left;
   font-family: 'Segoe UI', sans-serif;
+  background-color: #6e00d7;
 }
 
 .contacto h2 {
@@ -58,7 +59,7 @@
 }
 
 .contacto p {
-  color: #070707;
+  color: white;
   margin-bottom: 20px;
   font-weight: 600;
   /* más grueso que normal (400) */
@@ -76,13 +77,16 @@
 
 /* Cartas */
 .card {
-  background: #f2f2f2;
+  background: #eaeaea;
   border-radius: 15px;
   padding: 25px;
   box-shadow: 8px 8px 10px rgba(38, 3, 43, 0.1);
   box-sizing: border-box;
   width: auto;
   border: 1px solid #131213;
+}
+.card p{
+  color: #131213;
 }
 
 .icon {
@@ -118,14 +122,38 @@
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s;
+  position: relative; /* Necesario para el pseudo-elemento */
+  overflow: hidden;   /* Oculta el efecto fuera del botón */
+  transition: color 0.3s;
+}
+
+.formularioc button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: #6e00d7;
+  z-index: 0;
+  transition: width 0.4s cubic-bezier(.4,0,.2,1);
+}
+
+.formularioc button:hover::before {
+  width: 100%;
+}
+
+.formularioc button span {
+  position: relative;
+  z-index: 1;
 }
 
 .formularioc button:hover {
-  background-color: #6e00d7;
+  color: #fff;
 }
-.formularioc input:hover{
-  border-color: #ffb230;
+
+.formularioc span{
+  color: white;
 }
 
 .titulo {
