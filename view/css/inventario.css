@@ -1,0 +1,65 @@
+main{
+    height: 100vh;
+    color: white;
+    background-color: var(--primary-color);
+}
+main h3{
+    font-weight: lighter;
+    color: #acacac;
+}
+
+.welcome{
+    padding: 10px;
+}
+
+.contenido-inventario { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #590094;
+}
+
+/*CARDS---CARDS---CARDS---CARDS---CARDS---CARDS---CARDS---CARDS*/
+
+.objeto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 200px;
+    height: 280px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: white;
+    color: #590094;
+}
+.objeto input{
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+    background: none;
+    color: white;
+}
+
+
+.añadir-objeto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 200px;
+    height: 280px;
+    border: 2px solid white;
+    border-radius: 8px;
+    border-style: dashed;
+    background-color: rgba(255, 255, 255, .2);
+}
+.añadir-objeto input{   
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+    background: none;
+    color: white;
+}
