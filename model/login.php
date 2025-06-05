@@ -1,16 +1,28 @@
 <?php
-    if(!empty($_POST["ingresar"])){ 
-        if(!empty($_POST["email"]) and !empty($_POST["password"])){
-            $email=$_POST["email"];
-            $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
-            $consulta = $Ruta ->query(" select * from usuario WHERE email='$email' and password='$password' ");
-            if($sql=$consulta ->fetch_object()){
-                header("Location:../../index.html");
-            }
-            else{
+if (!empty($_POST["ingresar"])) { 
+    if (!empty($_POST["email"]) && !empty($_POST["password"])) {
+        $email = $_POST["email"];
+        $password = $_POST["password"];
+
+        // Consulta preparada
+        $stmt = $Ruta->prepare("SELECT * FROM usuario WHERE email = ?");
+        $stmt->bind_param("s", $email);
+        $stmt->execute();
+        $resultado = $stmt->get_result();
+
+        if ($usuario = $resultado->fetch_object()) {
+            // Verifica la contraseña ingresada contra la hasheada
+            if (password_verify($password, $usuario->password)) {
+                header("Location: ../../index.html");
+                exit();
+            } else {
                 echo 'Error en Usuario y/o Contraseña';
             }
-
+        } else {
+            echo 'Error en Usuario y/o Contraseña';
         }
+    } else {
+        echo 'Todos los campos son obligatorios';
     }
+}
 ?>
