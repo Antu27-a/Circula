@@ -5,7 +5,7 @@
             $email=$_POST["email"];
             $telefono=$_POST["telefono"];
             $direccion=$_POST["direccion"];
-            $password=$_POST["password"];
+            $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
             $apellido=$_POST["apellido"];
             $sql= $Ruta->query("INSERT INTO usuario(nombre, email, telefono, direccion, password, apellido)values('$nombre','$email','$telefono','$direccion','$password','$apellido')");
             if($sql==1){
