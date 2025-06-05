@@ -13,11 +13,18 @@
     <header>
         <img src="../img/global-img/logo.png" alt="" class="logo">
         <nav class="menu">
-            <a href="../../index.html"> <img class="icon" src="view/img/global-img/home-icon-silhouette.png" alt="">
-                Inicio</a>
-            <a href="explorar.html"><img class="icon" src="view/img/global-img/magnifying-glass.png" alt="">Explorar</a>
-            <a href="donar.html">Inventario</a>
-            <a href="contacto.html"> <img class="icon" src="view/img/global-img/chatting.png" alt=""> Contacto</a>
+
+            <a href="index.html"><span class="nav-a"><img class="icon" src="view/img/icon-menu/apartment.png"
+                        alt="">Inicio</span></a>
+            <a href="view/pages/explorar.html"><span class="nav-a"><img class="icon" src="view/img/icon-menu/search.png"
+                        alt="">Explorar</span></a>
+            <a href="donar.html"><span class="nav-a"><img class="icon" src="view/img/icon-menu/recycle.png"
+                        alt="">Inventario</span></a>
+            <a href="view/pages/contacto.html"><span class="nav-a"><img class="icon"
+                        src="view/img/icon-menu/charlando.png" alt=""> Contacto</span></a>
+
+            
+
         </nav>
         <div class="login">
             <a href="login.php" class="btn-login">Iniciar Sesión</a>
