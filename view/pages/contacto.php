@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +21,7 @@
         <img src="../img/global-img/logo.png" alt="" class="logo">
         <nav class="menu">
 
-            <a href="../../index.html"><span class="nav-a"><img class="icon" src="../img/icon-menu/apartment.png" alt="">Inicio</span></a>
+            <a href="../../index.php"><span class="nav-a"><img class="icon" src="../img/icon-menu/apartment.png" alt="">Inicio</span></a>
             <a href="explorar.html"><span class="nav-a"><img class="icon" src="../img/icon-menu/search.png" alt="">Explorar</span></a>
             <a href="inventario.html"><span class="nav-a"><img class="icon" src="../img/icon-menu/recycle.png" alt="">Inventario</span></a>
             <a href="contacto.html"><span class="nav-a"><img class="icon"src="../img/icon-menu/charlando.png" alt=""> Contacto</span></a>
@@ -25,8 +29,18 @@
 
         </nav>
         <div class="login">
-            <a href="login.php" class="btn-login">Iniciar Sesión</a>
-            <a href="registrar.php" class="btn-registrarse">Registrarse</a>
+            <?php
+            if (isset($_SESSION['usuario'])) {
+                // Usuario logueado
+                echo "<a href='../../model/logout.php' class='btn-login'>Cerrar sesión</a>";
+            } else {
+                // Usuario invitado
+                echo "<a href='login.php' class='btn-login'>Iniciar sesión</a>";
+                echo "<a href='registrar.php' class='btn-registrarse'>Registrarse</a>";
+            }
+            ?>
+            <!-- <a href="login.php" class="btn-login">Iniciar Sesión</a> -->
+            <!-- <a href="registrar.php" class="btn-registrarse">Registrarse</a> -->
         </div>
     </header>
     <main>
