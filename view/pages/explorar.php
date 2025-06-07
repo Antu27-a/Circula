@@ -10,7 +10,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circula || Explorar</title>
     <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/registrar.css">
+    <link rel="stylesheet" href="../css/explorar.css">
 </head>
 
 <body>
@@ -42,27 +42,14 @@ session_start();
     </header>
     <main>
 
-        <form action="" class="formulario" method="post">
-
-            <h2>Iniciar Sesion</h2>
-
-            <input type="text" name="email" placeholder="Correo Electronico...">
-
-            <input type="text" name="password" placeholder="Contraseña...">
-
-            <input type="submit" name="ingresar" value="Iniciar Sesion">
-
-            
-        </form>
+        <h1>Explorar</h1>
+        <p>Esta página está en construcción.</p>
+        <p>Pronto podrás usar filtros y demas</p>
 
     </main>
     <footer>
 
     </footer>
-    <?php 
-    include("../../controller/conexionBD.php");
-    include("../../model/login.php");
-    ?>
 </body>
 
 </html>

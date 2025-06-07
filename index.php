@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,8 +29,18 @@
 
         </nav>
         <div class="login">
-            <a href="view/pages/login.php" class="btn-login">Iniciar Sesión</a>
-            <a href="view/pages/registrar.php" class="btn-registrarse">Registrarse</a>
+            <?php
+            if (isset($_SESSION['usuario'])) {
+                // Usuario logueado
+                echo "<a href='model/logout.php' class='btn-login'>Cerrar sesión</a>";
+            } else {
+                // Usuario invitado
+                echo "<a href='view/pages/login.php' class='btn-login'>Iniciar sesión</a>";
+                echo "<a href='view/pages/registrar.php' class='btn-registrarse'>Registrarse</a>";
+            }
+            ?>
+            <!-- <a href="view/pages/login.php" class="btn-login">Iniciar Sesión</a> -->
+            <!-- <a href="view/pages/registrar.php" class="btn-registrarse">Registrarse</a> -->
         </div>
     </header>
     <main>
