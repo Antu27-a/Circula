@@ -1,5 +1,7 @@
 <?php
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 
 if (!empty($_POST["ingresar"])) { 
     if (!empty($_POST["email"]) && !empty($_POST["password"])) {
@@ -29,3 +31,4 @@ if (!empty($_POST["ingresar"])) {
     }
 }
 ?>
+
