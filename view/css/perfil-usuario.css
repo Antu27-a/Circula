@@ -25,9 +25,9 @@
     line-height: 1.6;
 } */
 
-.contenedor {
+.contenedor { 
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 30px auto;
     display: grid;
     grid-template-columns: 2fr 3fr;
     gap: 30px;
