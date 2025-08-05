@@ -78,6 +78,10 @@ main h3{
     color: white;
 }
 
+.precio-boton{
+    display: flex;
+    justify-content: space-between;
+}
 
 .añadir-objeto{
     display: flex;

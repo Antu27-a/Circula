@@ -51,7 +51,10 @@ session_start();
                     <h2>Chocolate Casero</h2>
                     <h4>Buenos Aires, La matanza.</h4>
                     <h4><span>Envio </span>Gratis</h4>
-                    <h3>100000$</h3>
+                    <div class="precio-boton">
+                        <h3>100000$</h3>
+                        <a href="producto.html"><img src="../img/inventario-img/expandir.png" alt="" width="30px"></a>
+                    </div>
                 </div>
             </div>
             <div class="añadir-objeto">
