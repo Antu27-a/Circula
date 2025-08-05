@@ -24,7 +24,7 @@ session_start();
             <a href="index.php"><span class="nav-a"><img class="icon" src="view/img/icon-menu/apartment.png" alt="">Inicio</span></a>
             <a href="view/pages/explorar.php"><span class="nav-a"><img class="icon" src="view/img/icon-menu/search.png" alt="">Explorar</span></a>
             <a href="view/pages/inventario.php"><span class="nav-a"><img class="icon" src="view/img/icon-menu/recycle.png" alt="">Inventario</span></a>
-            <a href="view/pages/contacto.hp"><span class="nav-a"><img class="icon"src="view/img/icon-menu/charlando.png" alt=""> Contacto</span></a>
+            <a href="view/pages/contacto.php"><span class="nav-a"><img class="icon"src="view/img/icon-menu/charlando.png" alt=""> Contacto</span></a>
 
 
         </nav>

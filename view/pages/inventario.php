@@ -18,9 +18,9 @@ session_start();
         <img src="../img/global-img/logo.png" alt="" class="logo">
         <nav class="menu">
             <a href="../../index.php"> <img class="icon" src="../img/icon-menu/apartment.png" alt="">Inicio</a>
-            <a href="explorar.html"><img class="icon" src="../img/icon-menu/search.png" alt="">Explorar</a>
-            <a href="inventario.html"> <img class="icon" src="../img/icon-menu/recycle.png" alt="">Inventario</a>
-            <a href="contacto.html"> <img class="icon" src="../img/icon-menu/charlando.png" alt=""> Contacto</a>
+            <a href="explorar.php"><img class="icon" src="../img/icon-menu/search.png" alt="">Explorar</a>
+            <a href="inventario.php"> <img class="icon" src="../img/icon-menu/recycle.png" alt="">Inventario</a>
+            <a href="contacto.php"> <img class="icon" src="../img/icon-menu/charlando.png" alt=""> Contacto</a>
         </nav>
         <div class="login">
             <?php
