@@ -78,6 +78,10 @@ main h3{
     color: white;
 }
 
+.precio-boton{
+    display: flex;
+    justify-content: space-between;
+}
 
 .añadir-objeto{
     display: flex;
@@ -97,4 +101,24 @@ main h3{
     border: none;
     background: none;
     color: white;
+}
+
+/* Modal personalizado */
+#modal-objeto form input, #modal-objeto form textarea {
+    border: 1px solid #590094;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 16px;
+}
+#modal-objeto form button {
+    background: #590094;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+#modal-objeto form button[type="button"] {
+    background: #acacac;
+    color: #590094;
 }

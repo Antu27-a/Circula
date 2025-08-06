@@ -18,9 +18,9 @@ session_start();
         <img src="../img/global-img/logo.png" alt="" class="logo">
         <nav class="menu">
             <a href="../../index.php"> <img class="icon" src="../img/icon-menu/apartment.png" alt="">Inicio</a>
-            <a href="explorar.html"><img class="icon" src="../img/icon-menu/search.png" alt="">Explorar</a>
-            <a href="inventario.html"> <img class="icon" src="../img/icon-menu/recycle.png" alt="">Inventario</a>
-            <a href="contacto.html"> <img class="icon" src="../img/icon-menu/charlando.png" alt=""> Contacto</a>
+            <a href="explorar.php"><img class="icon" src="../img/icon-menu/search.png" alt="">Explorar</a>
+            <a href="inventario.php"> <img class="icon" src="../img/icon-menu/recycle.png" alt="">Inventario</a>
+            <a href="contacto.php"> <img class="icon" src="../img/icon-menu/charlando.png" alt=""> Contacto</a>
         </nav>
         <div class="login">
             <?php
@@ -51,7 +51,10 @@ session_start();
                     <h2>Chocolate Casero</h2>
                     <h4>Buenos Aires, La matanza.</h4>
                     <h4><span>Envio </span>Gratis</h4>
-                    <h3>100000$</h3>
+                    <div class="precio-boton">
+                        <h3>100000$</h3>
+                        <a href="producto.html"><img src="../img/inventario-img/expandir.png" alt="" width="30px"></a>
+                    </div>
                 </div>
             </div>
             <div class="añadir-objeto">
@@ -62,6 +65,29 @@ session_start();
     <footer>
 
     </footer>
+
+    <!-- Modal para añadir producto -->
+    <div id="modal-objeto" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.4); justify-content:center; align-items:center; z-index:1000;">
+        <form action="../../model/alta.php" method="POST" style="background:white; padding:30px; border-radius:10px; min-width:300px; display:flex; flex-direction:column; gap:15px;">
+            <h2>Añadir Objeto</h2>
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <textarea name="descripcion" placeholder="Descripción" required></textarea>
+            <input type="text" name="ubicacion" placeholder="Ubicación" required>
+            <div style="display:flex; gap:10px; justify-content:flex-end;">
+                <button type="button" onclick="cerrarModal()">Cancelar</button>
+                <button type="submit">Guardar</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.querySelector('.añadir-objeto input').onclick = function() {
+            document.getElementById('modal-objeto').style.display = 'flex';
+        };
+        function cerrarModal() {
+            document.getElementById('modal-objeto').style.display = 'none';
+        }
+    </script>
 </body>
 
 </html>
