@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/global.css">
 </head>
 
-<body >
+<body>
 
     <header>
         <img src="../img/global-img/logo.png" alt="" class="logo">
@@ -23,10 +23,10 @@
                         alt="">Inventario</span></a>
             <a href="contacto.html"><span class="nav-a"><img class="icon" src="../img/icon-menu/charlando.png" alt="">
                     Contacto</span></a>
-                
+
         </nav>
         <div class="login">
-           
+
 
             <!-- <a href="login.php" class="btn-login">Iniciar Sesión</a> -->
             <!-- <a href="registrar.php" class="btn-registrarse">Registrarse</a> -->
@@ -84,11 +84,11 @@
 
             <div class="acciones-perfil">
                 <a href="#" class="boton boton-primario">
-                    <img src="archivo.png" alt="Editar" class="icono-boton">
+                    <img src="archivo.png" class="icono-boton">
                     Editar Perfil
                 </a>
                 <a href="#" class="boton boton-secundario">
-                    <img src="archivo.png" alt="Cerrar sesión" class="icono-boton">
+                    <img src="archivo.png" class="icono-boton">
                     Cerrar Sesión
                 </a>
             </div>
@@ -105,98 +105,178 @@
             </div>
         </div>
 
-        <!-- Contenido Principal -->
-        <div class="contenido-principal">
-            <!-- Sección Sobre Mí -->
-            <div class="seccion-contenido">
-                <h2 class="titulo-seccion">
-                    <img src="/placeholder.svg?height=24&width=24" alt="Saludo" class="icono-titulo">
-                    Sobre Mí
-                </h2>
-                <p class="texto-acerca">
-                    ¡Hola! Soy Ana, una apasionada del intercambio sostenible y la economía circular.
-                    Creo firmemente que podemos darle una segunda vida a los objetos que ya no usamos
-                    y encontrar tesoros en lo que otros ya no necesitan. Me encanta la idea de crear
-                    una comunidad donde todos podamos beneficiarnos intercambiando, donando y
-                    compartiendo recursos. Soy profesora de arte, madre de dos niños y siempre estoy
-                    buscando materiales creativos, libros infantiles y ropa en buen estado.
-                    ¡Espero poder intercambiar contigo pronto!
-                </p>
-            </div>
+        <div class="contenedor-contenido">
+            <!-- Contenido Principal -->
+            <div class="contenido-principal">
+                <!-- Sección Sobre Mí -->
+                <div class="seccion-contenido">
+                    <h2 class="titulo-seccion">
+                        <img src="/placeholder.svg?height=24&width=24" alt="Saludo" class="icono-titulo">
+                        Sobre Mí
+                    </h2>
+                    <p class="texto-acerca">
+                        ¡Hola! Soy Ana, una apasionada del intercambio sostenible y la economía circular.
+                        Creo firmemente que podemos darle una segunda vida a los objetos que ya no usamos
+                        y encontrar tesoros en lo que otros ya no necesitan. Me encanta la idea de crear
+                        una comunidad donde todos podamos beneficiarnos intercambiando, donando y
+                        compartiendo recursos. Soy profesora de arte, madre de dos niños y siempre estoy
+                        buscando materiales creativos, libros infantiles y ropa en buen estado.
+                        ¡Espero poder intercambiar contigo pronto!
+                    </p>
+                </div>
 
-            <!-- Sección Intereses -->
-            <div class="seccion-contenido">
-                <h2 class="titulo-seccion">
-                    <img src="/placeholder.svg?height=24&width=24" alt="Objetivo" class="icono-titulo">
-                    Mis Intereses de Intercambio
-                </h2>
-                <div class="cuadricula-intereses">
-                    <div class="categoria-interes">
-                        <img src="/placeholder.svg?height=32&width=32" alt="Ropa" class="icono-interes">
-                        <div class="titulo-interes">
-                            <h3>Ropa y Accesorios</h3>
+                <!-- seccion de objetos -->
+                <div class="seccion-contenido">
+                    <h2 class="titulo-seccion">
+                        <img src="/placeholder.svg?height=24&width=24" alt="Saludo" class="icono-titulo">
+                        Mis Objetos
+                    </h2>
+                    <div class="products-preview">
+                        <!-- Producto 1 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <span class="product-status status-donacion">Donación</span>
+                                <button class="product-heart">💜</button>
+                                <img src="../img/Suguro Geto.jpeg" alt="">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Mesa de comedor de madera</h3>
+                                <p class="product-location">Ciudad, Barrio</p>
+                                <p class="product-description">Mesa de comedor de madera maciza para 6 personas. En buen
+                                    estado, solo tiene algunos detalles por el uso.</p>
+                                <div class="product-actions">
+                                    <button class="product-btn btn-edit">Editar</button>
+                                    <button class="product-btn btn-delete">Eliminar</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="descripcion-interes">Especialmente ropa infantil y vintage</div>
+
+                        <!-- Producto 2 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <span class="product-status status-intercambio">Intercambio</span>
+                                <button class="product-heart">💜</button>
+                                <img src="../img/Suguro Geto.jpeg" alt="">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Libros de cocina vintage</h3>
+                                <p class="product-location">Ciudad, Barrio</p>
+                                <p class="product-description">Colección de libros de cocina de los años 80. Recetas
+                                    tradicionales y técnicas culinarias. lo </p>
+                                <div class="product-actions">
+                                    <button class="product-btn btn-edit">Editar</button>
+                                    <button class="product-btn btn-delete">Eliminar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+
+                                <span class="product-status status-gratis">Gratis</span>
+                                <button class="product-heart">💜</button>
+                                <img src="../img/Suguro Geto.jpeg" alt="">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Libros de cocina vintage</h3>
+                                <p class="product-location">Ciudad, Barrio</p>
+                                <p class="product-description">Colección de libros de cocina de los años 80. Recetas
+                                    tradicionales y técnicas culinarias. lo </p>
+                                <div class="product-actions">
+                                    <button class="product-btn btn-edit">Editar</button>
+                                    <button class="product-btn btn-delete">Eliminar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Botón Ver Más -->
+                        <div class="view-more-container">
+                            <button class="view-more-btn">
+                                <span>Ver más productos</span>
+                                <span class="arrow">→</span>
+                            </button>
+                        </div>
                     </div>
-                    <div class="categoria-interes">
-                        <img src="/placeholder.svg?height=32&width=32" alt="Libros" class="icono-interes">
-                        <div class="titulo-interes">
-                            <h3>Libros</h3>
+
+                </div>
+
+
+
+                <!-- Sección Intereses -->
+                <div class="seccion-contenido">
+                    <h2 class="titulo-seccion">
+                        <img src="/placeholder.svg?height=24&width=24" alt="Objetivo" class="icono-titulo">
+                        Mis Intereses de Intercambio
+                    </h2>
+                    <div class="cuadricula-intereses">
+                        <div class="categoria-interes">
+                            <img src="/placeholder.svg?height=32&width=32" alt="Ropa" class="icono-interes">
+                            <div class="titulo-interes">
+                                <h3>Ropa y Accesorios</h3>
+                            </div>
+                            <div class="descripcion-interes">Especialmente ropa infantil y vintage</div>
                         </div>
-                        <div class="descripcion-interes">Literatura, arte y libros infantiles</div>
-                    </div>
-                    <div class="categoria-interes">
-                        <img src="/placeholder.svg?height=32&width=32" alt="Arte" class="icono-interes">
-                        <div class="titulo-interes">
-                            <h3>Materiales de Arte</h3>
+                        <div class="categoria-interes">
+                            <img src="/placeholder.svg?height=32&width=32" alt="Libros" class="icono-interes">
+                            <div class="titulo-interes">
+                                <h3>Libros</h3>
+                            </div>
+                            <div class="descripcion-interes">Literatura, arte y libros infantiles</div>
                         </div>
-                        <div class="descripcion-interes">Pinturas, pinceles, lienzos</div>
-                    </div>
-                    <div class="categoria-interes">
-                        <img src="/placeholder.svg?height=32&width=32" alt="Juguetes" class="icono-interes">
-                        <div class="titulo-interes">
-                            <h3>Juguetes</h3>
+                        <div class="categoria-interes">
+                            <img src="/placeholder.svg?height=32&width=32" alt="Arte" class="icono-interes">
+                            <div class="titulo-interes">
+                                <h3>Materiales de Arte</h3>
+                            </div>
+                            <div class="descripcion-interes">Pinturas, pinceles, lienzos</div>
                         </div>
-                        <div class="descripcion-interes">Juguetes educativos y didácticos</div>
-                    </div>
-                    <div class="categoria-interes">
-                        <img src="/placeholder.svg?height=32&width=32" alt="Decoración" class="icono-interes">
-                        <div class="titulo-interes">
-                            <h3>Decoración</h3>
+                        <div class="categoria-interes">
+                            <img src="/placeholder.svg?height=32&width=32" alt="Juguetes" class="icono-interes">
+                            <div class="titulo-interes">
+                                <h3>Juguetes</h3>
+                            </div>
+                            <div class="descripcion-interes">Juguetes educativos y didácticos</div>
                         </div>
-                        <div class="descripcion-interes">Objetos vintage y artesanales</div>
-                    </div>
-                    <div class="categoria-interes">
-                        <img src="/placeholder.svg?height=32&width=32" alt="Plantas" class="icono-interes">
-                        <div class="titulo-interes">
-                            <h3>Plantas</h3>
+                        <div class="categoria-interes">
+                            <img src="/placeholder.svg?height=32&width=32" alt="Decoración" class="icono-interes">
+                            <div class="titulo-interes">
+                                <h3>Decoración</h3>
+                            </div>
+                            <div class="descripcion-interes">Objetos vintage y artesanales</div>
                         </div>
-                        <div class="descripcion-interes">Plantas de interior y semillas</div>
+                        <div class="categoria-interes">
+                            <img src="/placeholder.svg?height=32&width=32" alt="Plantas" class="icono-interes">
+                            <div class="titulo-interes">
+                                <h3>Plantas</h3>
+                            </div>
+                            <div class="descripcion-interes">Plantas de interior y semillas</div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Sección Estadísticas -->
-            <div class="seccion-contenido">
-                <div class="contenedor-estadisticas">
-                    <h2 class="titulo-estadisticas">
-                        <img src="/placeholder.svg?height=24&width=24" alt="Estadísticas" class="icono-estadisticas">
-                        Mis Estadísticas en Circula
-                    </h2>
-                    <div class="cuadricula-estadisticas">
-                        <div class="elemento-estadistica">
-                            <span class="numero-estadistica">47</span>
-                            <span class="etiqueta-estadistica">Trueques Realizados</span>
-                        </div>
-                        <div class="elemento-estadistica">
-                            <span class="numero-estadistica">23</span>
-                            <span class="etiqueta-estadistica">Objetos Donados</span>
-                        </div>
-                        <div class="elemento-estadistica">
-                            <span class="numero-estadistica">31</span>
-                            <span class="etiqueta-estadistica">Objetos Recibidos</span>
-                        </div>
+                <!-- Sección Estadísticas -->
+                <div class="seccion-contenido">
+                    <div class="contenedor-estadisticas">
+                        <h2 class="titulo-estadisticas">
+                            <img src="/placeholder.svg?height=24&width=24" alt="Estadísticas"
+                                class="icono-estadisticas">
+                            Mis Estadísticas en Circula
+                        </h2>
+                        <div class="cuadricula-estadisticas">
+                            <div class="elemento-estadistica">
+                                <span class="numero-estadistica">47</span>
+                                <span class="etiqueta-estadistica">Trueques Realizados</span>
+                            </div>
+                            <div class="elemento-estadistica">
+                                <span class="numero-estadistica">23</span>
+                                <span class="etiqueta-estadistica">Objetos Donados</span>
+                            </div>
+                            <div class="elemento-estadistica">
+                                <span class="numero-estadistica">31</span>
+                                <span class="etiqueta-estadistica">Objetos Recibidos</span>
+                            </div>
 
+                        </div>
                     </div>
                 </div>
             </div>
