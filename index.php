@@ -421,6 +421,27 @@ session_start();
         <script src="view/js/tarjetas.js"></script>
 
     </main>
+    <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="view/img/global-img/logo.png" alt="Logo Circula">
+        </div>
+        <nav class="footer-links">
+            <a href="index.php">Inicio</a>
+            <a href="view/pages/explorar.php">Explorar</a>
+            <a href="view/pages/inventario.php">Inventario</a>
+            <a href="view/pages/contacto.php">Contacto</a>
+        </nav>
+        <div class="footer-socials">
+            <a href="#" title="Facebook"><img src="view/img/icon-menu/facebook.png" alt="Facebook"></a>
+            <a href="#" title="Twitter"><img src="view/img/icon-menu/twitter.png" alt="Twitter"></a>
+            <a href="#" title="Instagram"><img src="view/img/icon-menu/instagram.png" alt="Instagram"></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 Circula. Todos los derechos reservados.</p>
+    </div>
+</footer>
 </body>
 
 </html>
