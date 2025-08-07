@@ -70,7 +70,10 @@ session_start();
     <div id="modal-objeto" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.4); justify-content:center; align-items:center; z-index:1000;">
         <form action="../../model/alta.php" method="POST" style="background:white; padding:30px; border-radius:10px; min-width:300px; display:flex; flex-direction:column; gap:15px;">
             <h2>Añadir Objeto</h2>
+            <label for="">Imagen:</label>
+            <input type="file" name="imagen" src="" alt="" placeholder="imagen" required>
             <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="text" name="categoria" placeholder="Categoría" required>
             <textarea name="descripcion" placeholder="Descripción" required></textarea>
             <input type="text" name="ubicacion" placeholder="Ubicación" required>
             <div style="display:flex; gap:10px; justify-content:flex-end;">
