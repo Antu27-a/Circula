@@ -9,19 +9,19 @@
 /* aca se estila lo que seria el estilo general de la pagina, 
 y lo que se va a quedar igual entre pagina y pagina (navbar, footer, colores, etc) */
 
-:root { 
+:root {
     --primary-color: #6e00d7;
     --secundary-color: #ffb230;
     --background-color: #f5f5f5;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
     background-color: #f5f5f5;
     color: #333;
 }
 
-.icon{
+.icon {
     max-width: 25px;
 }
 
@@ -56,7 +56,8 @@ header {
     font-size: 20px;
     font-weight: 600;
     transition: .3s;
-    position: relative; /* Necesario para el pseudo-elemento */
+    position: relative;
+    /* Necesario para el pseudo-elemento */
 }
 
 .menu a::after {
@@ -73,7 +74,7 @@ header {
 
 .menu a:hover::after {
     width: 100%;
-    
+
 }
 
 .login {
@@ -98,7 +99,7 @@ header {
     padding: 8px;
     text-decoration: none;
     color: rgb(110, 0, 215);
-    font-size: 20px;    
+    font-size: 20px;
     border: 1px solid rgb(110, 0, 215);
     border-radius: 6px;
     transition: .3s;
@@ -109,8 +110,38 @@ header {
     color: white;
 }
 
-.nav-a { 
+.nav-a {
     display: flex;
     align-items: center;
     gap: 4px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        margin-bottom: 40px;
+    }
+
+    .menu,
+    .login {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .menu a,
+    .btn-login,
+    .btn-registrarse {
+        font-size: 17px;
+        padding: 6px 10px;
+    }
+
+    .logo {
+        width: 120px;
+    }
 }
