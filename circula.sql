@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 09-05-2025 a las 19:01:04
--- Versión del servidor: 10.4.28-MariaDB
--- Versión de PHP: 8.2.4
+-- Tiempo de generación: 07-08-2025 a las 18:46:34
+-- Versión del servidor: 10.4.32-MariaDB
+-- Versión de PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -60,10 +60,9 @@ CREATE TABLE `producto` (
   `idusuario` int(11) NOT NULL,
   `nombre` varchar(100) NOT NULL,
   `descripcion` text DEFAULT NULL,
-  `estado_producto` enum('nuevo','usado','defectuoso') NOT NULL,
+  `ubicacion` varchar(40) NOT NULL,
   `categoria` varchar(50) DEFAULT NULL,
-  `fecha_publicacion` datetime DEFAULT current_timestamp(),
-  `disponible` tinyint(1) DEFAULT 1
+  `fecha_publicacion` datetime DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -79,8 +78,17 @@ CREATE TABLE `usuario` (
   `telefono` varchar(20) DEFAULT NULL,
   `direccion` varchar(150) DEFAULT NULL,
   `password` varchar(255) NOT NULL,
-  `estado` tinyint(1) DEFAULT 1
+  `apellido` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `usuario`
+--
+
+INSERT INTO `usuario` (`idusuario`, `nombre`, `email`, `telefono`, `direccion`, `password`, `apellido`) VALUES
+(4, 'asda', 'kiki@gmail.com', '1234', 'hola234', '$2y$10$4qDg5Uhrf6lMoF62Icf1zu4fLx3C1aCmxJ4OyLUDOfwRKsUYHg5da', 'jkljk'),
+(8, 'kevbin', 'kebin@gmail.com', '123456', 'dsad', '$2y$10$yVOVOltmjgBdCvG9QMoYAeSTDml1TNTrZIxGmNCeMb/HtXkO0.sva', 'copa'),
+(9, 'bruno', 'lulu@gmail.com', '1234', 'hola123', '$2y$10$lVygqvfWwByqGZPqERg.XeunQ/T.gc589xN2F9fPFuUcaeImW3Qxy', 'lopez');
 
 --
 -- Índices para tablas volcadas
@@ -142,7 +150,7 @@ ALTER TABLE `producto`
 -- AUTO_INCREMENT de la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `idusuario` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idusuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- Restricciones para tablas volcadas
