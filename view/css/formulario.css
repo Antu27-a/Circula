@@ -1,13 +1,20 @@
+:root {
+    --primary-color: #6e00d7;
+    --secundary-color: #ffb230;
+    --background-color: #f5f5f5;
+}
+
 .formulario {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  border-radius: 6px;
+  border-radius: 15px;
   background-color: var(--primary-color);
   color: whitesmoke;
-  width: 30%;
+  width: 50%;
+  border: 2px solid #131213;
 
 }
 
@@ -17,9 +24,9 @@
   font-size: 16px;
   border-radius: 4px;
   padding: 8px;
-  background-color: #931fff;
-  border: none;
-  color: white;
+  background-color: var(--background-color);
+  border: 1px solid #ffffff;
+  color: rgb(0, 0, 0);
 }
 
 .formulario input::placeholder {
@@ -50,7 +57,7 @@
   padding: 20px;
   text-align: left;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #6e00d7;
+ 
 }
 
 .contacto h2 {
@@ -59,7 +66,7 @@
 }
 
 .contacto p {
-  color: white;
+  color: rgb(0, 0, 0);
   margin-bottom: 20px;
   font-weight: 600;
   /* más grueso que normal (400) */
@@ -101,6 +108,7 @@
   flex-direction: column;
   gap: 15px;
   padding: 20px;
+  align-items: center;
 
 }
 

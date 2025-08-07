@@ -10,8 +10,6 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circula || Contacto</title>
     <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/explorar.css">
-
     <link rel="stylesheet" href="../css/formulario.css">
     
 </head>

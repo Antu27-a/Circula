@@ -11,6 +11,7 @@ session_start();
     <title>Circula || Explorar</title>
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/registrar.css">
+    <link rel="stylesheet" href="../css/formulario.css">
 </head>
 
 <body>
